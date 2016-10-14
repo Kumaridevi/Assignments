@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title>Found My Animal</title>
+		<meta name="description" content="">
+		
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet">
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+		<!--font family-->
+		<link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	
+	</head>
+	<body>
+		<div class="container" id="main">
+			<div class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container">
+					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/"><img src="images/found.jpg" alt="Your logo"></a>
+					<div class="nav-collapse collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="index.html">Home</a>
+							</li><!--end active-->
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Accessories<strong class="caret"></strong></a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">Food & Treats</a>
+								    </li>
+								    <li>
+										<a href="#">Animal Beds</a>
+								    </li>
+								    <li>
+										<a href="#">Kennels & Pens</a>
+								    </li>
+								    <li>
+										<a href="#">Bowls & Accessories</a>
+								    </li>
+								    <li class="divider"></li>
+								    <li class="dropdown-header">More Accessories</li>
+								    <li>
+									<a href="#">Health Care</a></li>
+									<li>
+										<a href="#">Carries</a>
+									</li>
+							    </ul><!--end dropdown-menu-->
+						    </li>
+								<li>
+								  <a href="#">Shop</a>
+								</li>
+								<li>
+								  <a href="#">About</a>
+								</li>
+								<li>
+								  <a href="#">Contact</a>
+								</li>
+
+						</ul><!--end navbar-nav-->
+
+						<form class="navbar-form pull-left">
+							<input type="text" class="form-control" placeholder="Search Animal..." id="searchInput">
+							  <button type="submit" class="btn btn-default">
+								<span class="glyphicon glyphicon-search"></span>
+							   </button>
+
+						</form><!--end navbar-form-->
+						<ul class="nav navbar-nav pull-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span  class="glyphicon glyphicon-user"></span>My Account<strong class="caret"></strong></a>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-wrench"></span>Settings</a>
+									</li>
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-refresh"></span>Update Profile</a>
+									</li>
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-briefcase"></span>Billing</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-off"></span>Sign out</a>
+									</li>
+								</ul>
+							</li>
+						</ul> <!--end navbar-nav pull-right-->
+
+					</div><!--end nav-collapse-->
+					</div><!--end container-->
+				</div><!--end navbar-->
+			<div class="carousel slide" id="myCarousel" data-ride="carousel">
+			   <ol class="carousel-indicators">
+				  <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+				  <li data-slide-to="1" data-target="#myCarousel"></li>
+				  <li data-slide-to="2" data-target="#myCarousel"></li>
+			  </ol>
+			    <div class="carousel-inner">
+				    <div class="item active" id="slide1">
+					</div><!--end slide1-->
+				    <div class="item" id="slide2">
+					    <div class="carousel-caption">
+						    <h2>Fish</h2>
+						    <p style="color:white;font-size:18px;">A fish is an amazing animal which lives and breathes in water. Fish have been on the Earth for over 500 million years. All fish have a backbone and most breathe through gills and have fins and scales. Fish have excellent senses of sight, touch, taste and many possess a good sense of smell and ‘hearing’.</p>
+					    </div><!--carousel caption-->
+				    </div><!--slide2-->
+				    <div class="item" id="slide3">
+					    <div class="carousel-caption">
+						    <h2>Cat</h2>
+						    <p style="color:white;font-size:18px;">The cat is a pet animal. It is a pretty animal. It has a lovely round face. It has four legs, two ears, two eyes and a tail. Its body is covered with soft fur. Cats are different colours. It has sharp teeth and sharp claws. It walks without making sound. It can climb up a tree and can jump from one roof to another. </p>
+					    </div><!--carousel caption-->
+				    </div><!--end slide3-->
+			    </div><!--end carousel inner-->
+			        <a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+			        <a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+		    </div><!--end carousel slide-->
+			<div class="row" id="bigCallout">
+				<div class="col-12">
+				    <div class="alert alert-success alert-block fade in" id="successAlert">
+			            <button type="button" class="close" data-dismiss="alert">&times;</button>
+				        <h4>Success!</h4>
+			            <p>You successfully selected the animal. Click the "x" in the top right corner to close.</p>
+		            </div><!-- end alert -->
+		                <!-- Visible only on small devices -->
+		            <div class="well well-small visible-sm">
+			            <a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span> Give us a call!</a>
+		            </div><!-- end well-small -->
+		            <div class="well">
+			            <div class="page-header">
+				            <h1>Shipping & Returns <small>Satisfaction Assured</small></h1>
+			            </div><!-- end page-header -->
+						    <p class="lead">Your satisfaction is our success. If you wish to return or exchange any item please advise us within 7 days of receipt. Items must not have been used or damaged in anyway. You will be responsible for the cost of postage/courier for returned goods unless the original item was shipped in error.</p>
+			                <a href="" class="btn btn-large btn-primary" id="alertMe">Click to select</a>
+			                <a href="photo.html" class="btn btn-large btn-link">or Photos</a>
+		            </div><!-- end well -->
+	            </div><!-- end col-12 -->
+	        </div><!--end bigCallout-->
+		<div class="row" id="featuresHeading">
+			<div class="col-12">
+				<h2>Pets make great friends</h2>
+					<p class="lead">Pets are playful beings in the house as they keep everyone, young and old, happy in the house.</p>
+			</div><!--end col-12 -->
+		</div><!--end featuresHeading-->
+				<div class="row" id="features">
+				    <div class="col-sm-4 feature">
+		                <div class="panel">
+			                <div class="panel-heading">
+				                <h3 class="panel-title">Lovely Dogs</h3>
+			                </div><!-- end panel-heading -->
+			                    <img src="images/side1.jpg" alt="Lovely Dogs" class="img-circle /">
+					            <p style="font-size:18px;text-align:justify;font-family: 'Aclonica', sans-serif;
+                                ">Dogs will help you get exercise at least twice a day. Through regular exercise you can lose weight, lower your cholesterol, and decrease your risk of diabetes.</p>
+			                 	<a href="https://pethelpful.com/dogs/The-Advantages-and-Disadvantages-of-Having-a-Dog" target="_blank" class="btn btn-info btn-block">find more</a>
+		                </div><!-- end panel -->
+	               </div><!-- end feature -->
+		           <div class="col-sm-4 feature">
+		                <div class="panel">
+			                <div class="panel-heading">
+				                <h3 class="panel-title">Colorful Fishes</h3>
+			                </div><!-- end panel-heading -->
+			                    <img src="images/side2.jpg" alt="Colorful Fishes" class="img-circle">
+						        <p style="font-size:18px;text-align:justify;font-family: 'Aclonica', sans-serif;
+                                ">fish are easier and less expensive to feed and care for than other pets, however, they do require a proper environment and knowledgeable caretakers.</p>
+						        <a href="http://healthypets.mercola.com/sites/healthypets/archive/2011/03/03/ten-reasons-why-fish-make-good-pets.aspx" target="_blank" class="btn btn-info btn-block">find more</a>
+		                </div><!-- end panel -->
+	                </div><!-- end feature -->
+	                <div class="col-sm-4 feature">
+		                <div class="panel">
+			                <div class="panel-heading">
+				                <h3 class="panel-title">Cute Cats</h3>
+			                </div><!-- end panel-heading -->
+			                    <img src="images/side3.jpg" alt="Cute Cats" class="img-circle">
+						        <p style="font-size:18px;text-align:justify;font-family: 'Aclonica', sans-serif;
+                                ">Cats are popular pets and they bring much love and joy to their human companions.Tossing a toy mouse around the living room can get you moving a bit, too.</p>
+						        <a href="https://www.lovethatpet.com/cats/getting-started/benefits-of-owning-a-cat/" target="_blank" class="btn btn-info btn-block">find more</a>
+		                </div><!-- end panel -->
+	                </div><!-- end feature -->
+	            </div><!--end features-->
+				<hr>
+				<div class="row" id="moreInfo">
+					<div class="col-sm-6">
+						<h3>Location Info</h3>
+						<div class="tabbable">
+	                        <ul class="nav nav-tabs">
+		                        <li class="active"><a href="#tab1" data-toggle="tab">Location</a></li>
+		                        <li><a href="#tab2" data-toggle="tab">Shop</a></li>
+	                        </ul>
+	                           <div class="tab-content">
+		                             <div class="tab-pane active" id="tab1">
+			                             <h4><span class="glyphicon glyphicon-map-marker"></span> Our Location <small>our favourite pet Shop</small></h4>
+			                 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62589.38974188278!2d77.68037727524295!3d11.346624035578433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96f46762f4671%3A0xd97da6e3d9c7f75e!2sErode%2C+Tamil+Nadu!5e0!3m2!1sen!2sin!4v1476336864596" width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+			                 			<p style="font-size:18px;font-family: 'Lato', sans-serif;
+                                        ">Find my animal is one of the best resources for finding pets that are in need of homes. The website operates on a database that contains over 13,000 different animal shelters and pet adoption organizations all throughout North America – yes, that means Petfinder doesn’t only search the United States, but also Canada and Mexico.</p>
+			                			<p style="font-size:18px;font-family: 'Lato', sans-serif;">The search database isn’t limited to dogs and cats, but also horses, birds, reptiles, small furries, and even barnyard animals. Their listings are updated on a daily basis, so you’ll never run into an outdated post.</p>
+		                              </div><!-- end tab-pane -->
+		                       <div class="tab-pane" id="tab2">
+			                           <h4>Shop<small>&nbsp;Visit Shop</small></h4>
+			                           <img src="images/more1.jpg" class="thumbnail pull-left" alt="shop image">
+			                			<p style="font-size:18px;font-family: 'Lato', sans-serif;">&nbsp;&nbsp;The best possible match to your family and lifestyle will help your adoption be a lifelong, rewarding one. Some websites like Petfinder.com allow you the opportunity to search by breed, sex, size and other criteria. Be flexible when looking at the available pets.The human-dog relationship is the most unique and longest in the animal kingdom. Today 54 million American households include 78 million dogs that many people consider to be family. </p>
+			                 			<p style="font-size:18px;font-family: 'Lato', sans-serif;">&nbsp;&nbsp;The search database isn’t limited to dogs and cats, but also horses, birds, reptiles, small furries, and even barnyard animals. Their listings are updated on a daily basis, so you’ll never run into an outdated post.</p>
+						            <hr>
+			                			<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span> Rate here</a>
+			                        <div class="modal fade" id="myModal">
+	                                    <div class="modal-dialog">
+		                                    <div class="modal-content">
+			                                    <div class="modal-header">
+				                                    <button class="close" data-dismiss="modal">&times;</button>
+					                                <h4 class="modal-title">Give Your Rate</h4>
+			                                    </div><!-- end modal-header -->
+			                                <div class="modal-body">
+					                            <form class="form-horizontal">
+					                                <div class="form-group">
+						                                <label class="col-lg-2 control-label" for="inputName">Name</label>
+						                                    <div class="col-lg-10">
+							                                    <input class="form-control" id="inputName" placeholder="Name" type="text">
+						                                    </div><!--end col-lg-10-->
+					                                </div><!--end form group-->
+										            <div class="form-group">
+						                                <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+						                                    <div class="col-lg-10">
+							                                    <input class="form-control" id="inputEmail" placeholder="Email" type="email">
+						                                    </div><!--end col-lg-10-->
+					                                </div><!--end form group-->
+					                                <div class="form-group">
+						                                <label class="col-lg-2 control-label" for="inputMessage">Give Rate</label>
+						                                    <div class="col-lg-10">
+							                                    <textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+							                                     <button class="btn btn-success pull-right" type="submit">Send!</button>
+						                                    </div><!--end col-lg-10-->
+					                                </div><!--end form group-->
+				                                </form>
+			                                </div><!-- end modal-body -->
+			                                        <div class="modal-footer">
+				                                    <button class="btn btn-default" data-dismiss="modal" type="button">Close</button> <button class="btn btn-primary" type="button">Save changes</button>
+			                                        </div><!-- end modal-footer -->
+		                                    </div><!-- end modal-content -->
+	                                    </div><!-- end modal-dialog -->
+                                    </div><!-- end myModal -->
+		                        </div><!-- end tab-pane -->
+	                        </div><!-- end tab-content -->
+                        </div><!-- end tabbable -->
+	                </div><!--end col-sm-6-->
+					<div class="col-sm-6">
+						<h3>Avaliable Pets</h3>
+						    <div class="list-group">
+								<a href="#" class="list-group-item">
+									<h4 class="list-group-item-heading">Dogs</h4>
+									<p style="font-family: 'Lato', sans-serif;font-size:15px;" class="list-group-item-text">&nbsp;&nbsp;Boxer,Briard,Brittany,Bull Terrier,Kerry Blue Terrier</p>
+								</a>
+								<a href="#" class="list-group-item">
+									<h4 class="list-group-item-heading">Fish</h4>
+									<p style="font-family: 'Lato', sans-serif;font-size:15px;" class="list-group-item-text">&nbsp;&nbsp;Ayu,Golden Fish,Alewife,Algae,Blue Fish,Chub,Black tetra</p>
+								</a>
+								<a href="#" class="list-group-item">
+									<h4 class="list-group-item-heading">Cat</h4>
+									<p style="font-family: 'Lato', sans-serif;font-size:16px;" class="list-group-item-text">&nbsp;&nbsp;Cornish Rex,Cyprus,Donskoy,Chausie,Kheo Manee,Javanese</p>
+								</a>
+								<a href="#" class="list-group-item">
+									<h4 class="list-group-item-heading">Birds</h4>
+									<p style="font-family: 'Lato', sans-serif;font-size:16px;" class="list-group-item-text">&nbsp;&nbsp;Cornish Canaries,Cockatiels,Lovebirds,Small Parakeets,Caiques,Small Conures,ParrortsRex,Cyprus,Donskoy,Chausie,Kheo Manee,Javanese</p>
+								</a>
+								<a href="#" class="list-group-item">
+									<h4 class="list-group-item-heading">Chicken</h4>
+									<p style="font-family: 'Lato', sans-serif;font-size:16px;" class="list-group-item-text">&nbsp;&nbsp;Bahig,Dokki,Czech gold brindle chicken,Litti,Yellow chicken,Pekin oil chicken,Boffen</p>
+								</a>
+								<a href="#" class="list-group-item">
+									<h4 class="list-group-item-heading">Ducks</h4>
+									<p style="font-family: 'Lato', sans-serif;font-size:16px;" class="list-group-item-text">&nbsp;&nbsp;East Indies Duck,Eider Duck,Call Duck,Crrested Duck,Forest Duck,Kaiya Duck,Mallard,Mandarin Duck,Idegem Duck</p>
+								</a>
+								<a href="#" class="list-group-item">
+									<h4 class="list-group-item-heading">Sheep</h4>
+									<p style="font-family: 'Lato', sans-serif;font-size:16px;" class="list-group-item-text">&nbsp;&nbsp;Assaf,Aussiedown,Alai,Boreray,Bond,Bizet,Bentheimer Landschaf,Ghezel,Greyface Dartmoor,Grey Troender,Funglestad,Friesian Milk sheep</p>
+								</a>
+							</div><!--end list-group-->
+						</div><!--end col-sm-6-->
+				</div><!--end moreInfo-->
+			    <div class="row" id="moreCourses">
+					<div class="col-sm-12">
+						<h2>Customers Favorite Brands</h2>
+					</div><!--end col-sm-12-->
+					<div class="row" id="brands">
+				        <div class="col-sm-2 brand">
+		                    <div class="panel">
+				                <img src="images/food3.jpg" alt="Food" class="img-circle">
+		                    </div><!-- end panel -->
+	                    </div><!-- end col-sm-2 -->
+		            <div class="col-sm-2 brand">
+		                <div class="panel">
+				            <img src="images/food4.jpg" alt="Food" class="img-circle /">
+			            </div><!-- end panel -->
+	                </div><!-- end col-sm-2 -->
+		            <div class="col-sm-2 brand">
+		                <div class="panel">
+	     		            <img src="images/food5.jpg" alt="Food" class="img-circle">
+			            </div><!-- end panel -->
+	                </div><!-- end col-sm-2 -->
+	                <div class="col-sm-2 brand">
+		                <div class="panel">
+				            <img src="images/food6.jpg" alt="Food" class="img-circle">
+		                </div><!-- end panel -->
+	                </div><!-- end col-sm-2 -->
+	                <div class="col-sm-2 brand">
+		                <div class="panel">
+				            <img src="images/food7.jpg" alt="Food" class="img-circle">
+		                </div><!-- end panel -->
+	                </div><!-- end col-sm-2 -->
+	                <div class="col-sm-2 brand">
+		                <div class="panel">
+				            <img src="images/food8.jpg" alt="Food" class="img-circle">
+					    </div><!-- end panel -->
+	                </div><!-- end col-sm-2 -->
+                </div><!-- end row -->
+	       	</div><!--end moreCourses-->
+	</div><!--end container-->
+		<footer>
+			<div class="container">
+		        <div class="row">
+			        <div class="col-sm-5">
+				        <div class="about">
+				            <span class="glyphicon glyphicon-question-sign"></span>&nbsp&nbspAbout Us
+			            </div><!--end about-->
+		<br>
+			            <p style="font-size:12px;text-align:justify;">&nbsp&nbsp&nbspAnimals is a new type of animal welfare organization – one that empowers advocates to promote compassion and fight cruelty in the communities where they live.</p> <p style="font-size:12px;">&nbsp&nbspWe are building state-of-the-art web and mobile applications to help advocates connect, organize, participate, and, most importantly, make a difference in the lives of animals.</p>
+			        </div><!--end col-sm-5-->
+			        <div class="col-sm-4">
+				        <div class="contact">
+				            <span class="glyphicon glyphicon-envelope"></span>&nbsp&nbsp&nbspContact
+				            <br><br>
+				            <p style="font-size:12px;color:white;"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;Park Avenue 112,Sillicon Valley,America</p>
+				            <p style="font-size:12px;color:white;"><span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;&nbsp; 487 444-555</p>
+				            <p style="font-size:12px;color:white;"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;&nbsp;contact@foundmyanimal.com</p>
+			            </div><!--end contact-->
+			        </div><!--end col-sm-4-->
+			        <div class="col-sm-3">
+				    <div class="link">
+					    <span class="glyphicon glyphicon-refresh"></span>&nbsp&nbsp&nbspLinks
+					    <br><br>
+					    <p style="font-size:12px;color:white;"><span class="glyphicon glyphicon-star"></span>&nbsp;&nbsp;&nbsp;<a href="#">Our main sponsor</a></p>
+					    <p style="font-size:12px;color:white;"><span class="glyphicon glyphicon-star"></span>&nbsp;&nbsp;&nbsp;<a href="#">Someone we support</a></p>
+					    <p style="font-size:12px;color:white;"><span class="glyphicon glyphicon-star"></span>&nbsp;&nbsp;&nbsp;<a href="#">Our coming products</a></p>
+				    </div><!--end link-->
+			        </div><!--end col-sm-3-->
+			      
+		        </div><!-- end row -->
+	        </div><!-- end container -->
+		 <hr>
+	                <p style="color:black;text-align:center;font-size:13px;">Copyright &copy; 2016</p>
+    	</footer>
+		<!-- All Javascript at the bottom of the page for faster page loading -->
+		
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+	
+	</body>
+</html>
